@@ -1,0 +1,192 @@
+@baseURL = http://localhost:3000
+
+### SQL Endpoints
+
+###
+post {{baseURL}}/sql/produtos/add
+Content-Type: application/json
+
+{
+    "nome_produto": "Produto Exemplo",
+    "marca": "Marca Exemplo",
+    "categoria": "Categoria Exemplo"
+}
+
+
+###
+get {{baseURL}}/sql/produtos/view/1
+
+
+###
+get {{baseURL}}/sql/produtos/list
+
+
+###
+put {{baseURL}}/sql/produtos/edit/1
+Content-Type: application/json
+
+{
+    "nome_produto": "Produto Atualizado",
+    "marca": "Marca Atualizada",
+    "categoria": "Categoria Atualizada"
+}
+
+###
+delete {{baseURL}}/sql/produtos/delete/1
+
+
+###
+post {{baseURL}}/sql/listas/add
+Content-Type: application/json
+
+{
+    "nome": "Lista Exemplo",
+    "descricao": "Descrição Exemplo",
+    "data_compra": "2024-07-28T00:00:00Z"
+}
+
+###
+get {{baseURL}}/sql/listas/view/1
+
+###
+get {{baseURL}}/sql/listas/list
+
+###
+put {{baseURL}}/sql/listas/edit/1
+Content-Type: application/json
+
+{
+    "nome": "Lista Atualizada",
+    "descricao": "Descrição Atualizada",
+    "data_compra": "2024-07-29T00:00:00Z"
+}
+
+###
+delete {{baseURL}}/sql/listas/delete/1
+
+
+###
+post {{baseURL}}/sql/itens/add
+Content-Type: application/json
+
+{
+    "fk_lista": 1,
+    "fk_produto": 1,
+    "quantidade": 10,
+    "valor_unidade_produto": 5.99
+}
+
+###
+get {{baseURL}}/sql/itens/view/1
+
+###
+get {{baseURL}}/sql/itens/list
+
+###
+put {{baseURL}}/sql/itens/edit/1
+Content-Type: application/json
+
+{
+    "fk_lista": 1,
+    "fk_produto": 1,
+    "quantidade": 20,
+    "valor_unidade_produto": 6.99
+}
+
+###
+DELETE {{baseURL}}/sql/itens/delete/1
+
+
+
+
+
+### NoSQL Endpoints
+
+###
+post {{baseURL}}/nosql/produtos/add
+Content-Type: application/json
+
+{
+    "nome_produto": "Produto Exemplo",
+    "marca": "Marca Exemplo",
+    "categoria": "Categoria Exemplo"
+}
+
+###
+get {{baseURL}}/nosql/produtos/view/db4545eb-56e9-49bc-a70c-0769c37c7cc0
+
+###
+get {{baseURL}}/nosql/produtos/list
+
+###
+put {{baseURL}}/nosql/produtos/edit/db4545eb-56e9-49bc-a70c-0769c37c7cc0
+Content-Type: application/json
+
+{
+    "nome_produto": "Produto Atualizado",
+    "marca": "Marca Atualizada",
+    "categoria": "Categoria Atualizada"
+}
+
+###
+delete {{baseURL}}/nosql/produtos/delete/db4545eb-56e9-49bc-a70c-0769c37c7cc0
+
+###
+post {{baseURL}}/nosql/listas/add
+Content-Type: application/json
+
+{
+    "nome": "Lista Exemplo",
+    "descricao": "Descrição Exemplo",
+    "data_compra": "2024-07-28T00:00:00Z"
+}
+
+###
+get {{baseURL}}/nosql/listas/view/d3a56983-fce8-4136-9237-a357bd037e24
+
+###
+get {{baseURL}}/nosql/listas/list
+
+###
+put {{baseURL}}/nosql/listas/edit/d3a56983-fce8-4136-9237-a357bd037e24
+Content-Type: application/json
+
+{
+    "nome": "Lista Atualizada",
+    "descricao": "Descrição Atualizada",
+    "data_compra": "2024-07-29T00:00:00Z"
+}
+
+###
+delete {{baseURL}}/nosql/listas/delete/d3a56983-fce8-4136-9237-a357bd037e24
+
+###
+post {{baseURL}}/nosql/itens/add
+Content-Type: application/json
+
+{
+    "fk_lista": 1,
+    "fk_produto": 1,
+    "quantidade": 10,
+    "valor_unidade_produto": 5.99
+}
+
+###
+get {{baseURL}}/nosql/itens/view/698245e2-50d7-44be-8c06-902d4a368856
+
+###
+get {{baseURL}}/nosql/itens/list
+
+###
+put {{baseURL}}/nosql/itens/edit/698245e2-50d7-44be-8c06-902d4a368856
+Content-Type: application/json
+
+{
+    "fk_lista": 1,
+    "fk_produto": 1,
+    "quantidade": 20,
+    "valor_unidade_produto": 6.99
+}
+
+###
+delete {{baseURL}}/nosql/itens/delete/698245e2-50d7-44be-8c06-902d4a368856
